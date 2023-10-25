@@ -1,0 +1,17 @@
+.card {
+    width: 300px;
+    border: none;
+    flex: 0 0 auto;
+  }
+  
+  .card-img {
+    border-radius: 0%;
+  }
+  
+  .button {
+    background-color: black;
+    width: auto;
+    border: none;
+    border-radius: 0%;
+  }
+  

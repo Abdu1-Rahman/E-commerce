@@ -1,0 +1,44 @@
+.menu-img {
+    display: flex;
+  }
+  
+  /* .menu-container{
+    margin-left: 7%;
+  } */
+
+  .menu-img img {
+    width: 67%;
+    height: 430px;
+  }
+
+  
+  
+  .card-container {
+    display: flex;
+    gap: 9px;
+    overflow: scroll hidden;
+    /* margin-left: 7%; */
+    padding: 20px;
+    white-space: nowrap;
+  }
+  
+  .card-container::-webkit-scrollbar{
+    display: none;
+  }
+
+  .view-all-container{
+    display:flex;
+    align-Items:center;
+    justify-Content:center;
+    margin:6px;
+  }
+  
+  .view-all-button {
+    background-color: #A94064;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    width: 18rem;
+  }
+  
