@@ -28,7 +28,7 @@ const Sidenav = () => {
   return (
     <div>
      <div className="menu-img">
-       
+       <div className="menu-container">
         <Sidebar>
         <Menu>
           <MenuItem>Womans Fashion</MenuItem>
@@ -42,7 +42,7 @@ const Sidenav = () => {
           <MenuItem>Health & Beauty</MenuItem>
         </Menu>
         </Sidebar>
-         
+         </div>
         <img
           decoding="async"
           className="ha-slick-img"
@@ -53,42 +53,49 @@ const Sidenav = () => {
 
       <div className="card-container">
        <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title" 
           text="45" 
         />
         <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title"
           text="45"  
         />
         <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title"
           text="45" 
         />
        <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title"
           text="45"  
         />
         <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title"
           text="45"  
         />
         <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title"
           text="45"  
         />
         <Card
+          header="-40%"
           src={'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBrZXlib2FyZHxlbnwwfHwwfHx8MA%3D%3D'} 
           buttonLabel="Add To Cart" 
           title="Card title"

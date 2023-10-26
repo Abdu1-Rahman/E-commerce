@@ -3,6 +3,22 @@
     border: none;
     flex: 0 0 auto;
   }
+  .aa{
+    position: absolute;
+    margin-top: -279px;
+    background-color: #A94064;
+    border-radius: 4px;
+    margin-left: 6px;
+    width: 3rem;
+    height: 1.9rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+  }
+
+  
   
   .card-img {
     border-radius: 0%;
