@@ -1,3 +1,25 @@
-h3{
+h4,h1,h6{
     color: white;
+}
+
+.email{
+    background-color: #212529;
+    color: white;
+    border-color: white;
+    border-radius: 4px;
+}
+
+.footer-div{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px){
+    .footer-div{
+        flex-direction: column;
+    }
+
 }

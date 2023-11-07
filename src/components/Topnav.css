@@ -1,10 +1,30 @@
 .header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;/* Add some padding to improve spacing */
-    font-size: 16px;/* mobile style */
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-text {
+  display: inline-block; /* Make the text inline */
+  animation: scrollText 10s linear infinite forwards; /* Adjust the duration and timing as needed */
+  transform: translateX(50%);
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start off screen to the right */
   }
+  100% {
+    transform: translateX(-100%); /* Move off screen to the left */
+  }
+}
+
+
   
   .shop-now-link {
     color: white;
@@ -27,7 +47,7 @@
   }
   @media screen and (max-width: 1024px) {
     .header {
-      font-size: 20px; /* lap style */
+      font-size: 20px; /* lap style */ 
     }
   }
   

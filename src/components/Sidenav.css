@@ -1,30 +1,80 @@
+.sidnav{
+  margin: 0px 7px 0px 7px;
+}
 .menu-img {
   display: flex;
 }
 
 /* .menu-container {
   margin-left: 7%;
+  
 } */
 
-.menu-img img {
+.carousel {
   width: 80%; 
   height: 430px;   
   display: block; 
   margin: 0 auto; 
 }
 
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+}
+
+.heading-1{
+  align-items: center;
+  display: flex;
+}
+
+.mark{
+  background-color:#A94064;
+  width:20px;
+  color:#A94064;
+  border-radius:3px;
+  height: 40px;
+  margin: 9px;
+}
+.heading-2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  margin-left: 9px;
+}
+
 @media screen and (max-width:768px){
-  .menu-img img {
+   /* .sidebar{
+    position: relative;
+    width: fit-content;
+   } */
+  .carousel img {
     width: 100%;
     height: auto;
+    transition: 2.5;
+  } 
+  .carousel{
+    width:100%;
+    height: 170px;
   }
-
+  .heading-1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading-2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .product{
+    flex-direction: column;
+  }
+  
 }
 .card-container {
   display: flex;
   gap: 9px;
   overflow-x: auto; 
-  /* margin-left: 7%; */
+  margin: 1%; 
   padding: 20px;
   white-space: nowrap;
 }
@@ -42,9 +92,42 @@
 
 .view-all-button {
   background-color: #A94064;
-  border: none;
+  border-color: #A94064;
   color: white;
   padding: 10px;
   border-radius: 2px;
   width: 18rem;
+  transition-duration: 1s;
+  
+}
+.view-all-button:hover{
+  cursor: pointer;
+  color: #A94064;
+  background-color: white;
+  
+}
+
+.product{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.laptop,.phone,.camera,.headphone,.speaker,.game{
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  width: 150px;
+  height: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.laptop:hover,.phone:hover,.camera:hover,.headphone:hover,.speaker:hover,.game:hover{
+  background-color: #A94064;
+  color: white;
+  transition: 0.5s;
 }

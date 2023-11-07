@@ -12,7 +12,12 @@ function Topnav() {
   const navigate = useNavigate();
   return (
   <>
-  <h6 className='header'>Summer Sale For All Swim Suits And Free Express Delivery-OFF 50%!<a href='' className='shop-now-link'>ShopNow</a></h6>
+  <h6 className='header'>
+  <span className='header-text'>
+    Summer Sale For All Swim Suits And Free Express Delivery-OFF 50%! <a href='' className='shop-now-link'>Shop Now</a>
+  </span>
+</h6>
+
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">Exclusive</Navbar.Brand>
@@ -36,7 +41,8 @@ function Topnav() {
                 </Form>
                  
                 <Button style={{width: "3rem", height:"3rem" }} variant="outline-none"
-                        className="rounded-circle">
+                       
+                       className="rounded-circle">
                      <svg className="bi bi-heart w-4 h-4 b" xmlns="http://www.w3.org/2000/svg"  fill="currentColor"  viewBox="0 0 16 16">
                         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                      </svg>

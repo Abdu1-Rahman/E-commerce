@@ -22,6 +22,7 @@
   
   .card-img {
     border-radius: 0%;
+    height: 290px;
   }
   
   .button {
@@ -29,5 +30,9 @@
     width: auto;
     border: none;
     border-radius: 0%;
+  }
+
+  .button:hover{
+    background-color: #A94064;
   }
   
