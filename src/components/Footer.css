@@ -1,7 +1,3 @@
-h4,h1,h6{
-    color: white;
-}
-
 .email{
     background-color: #212529;
     color: white;
@@ -15,6 +11,7 @@ h4,h1,h6{
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    color: white;
 }
 
 @media screen and (max-width:768px){

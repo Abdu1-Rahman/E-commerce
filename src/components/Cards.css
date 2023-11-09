@@ -25,14 +25,14 @@
     height: 290px;
   }
   
-  .button {
+  .add-button {
     background-color: black;
     width: auto;
     border: none;
     border-radius: 0%;
   }
 
-  .button:hover{
+  .add-button:hover{
     background-color: #A94064;
   }
   

@@ -1,4 +1,9 @@
+.body {
+    font-family: 'poppins';
+}
+
 .index::-webkit-scrollbar{
     display: none;
 }
+
 

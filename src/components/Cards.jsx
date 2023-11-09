@@ -25,7 +25,7 @@ const Card = ({ header, src, title, buttonLabel, text, cartItems, setCartItems }
         
       </div>
       <CardBody>
-        <Button className="button" onClick={handleAddToCartClick}>{buttonLabel}</Button>
+        <Button className="add-button" onClick={handleAddToCartClick}>{buttonLabel}</Button>
         <CardTitle>{title}</CardTitle>
         <CardText>${text}</CardText>
       </CardBody>
