@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter,RouterProvider} from "react-router-dom";
 import Cart from './pages/Cart.jsx';
 import LoginSignup from './pages/LoginSignup.jsx';
