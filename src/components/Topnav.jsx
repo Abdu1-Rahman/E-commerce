@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 function Topnav() {
   const navigate = useNavigate();
-  const [menu,setMenu] = useState(" ")
+  const [menu,setMenu] = useState("home")
 
 
   return (

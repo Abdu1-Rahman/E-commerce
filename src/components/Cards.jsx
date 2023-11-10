@@ -1,6 +1,7 @@
 import React from "react";
-import { Card as ReactCard, CardImg, CardBody, CardTitle, Button, CardText, CardHeader } from "react-bootstrap";
+import { Card as ReactCard, CardImg, CardBody, CardTitle, Button, CardText, CardHeader} from "react-bootstrap";
 import './Cards.css';
+import { BsHeart } from 'react-icons/bs';
 
 const Card = ({ header, src, title, buttonLabel, text, cartItems, setCartItems }) => {
   const handleAddToCartClick = () => {
@@ -21,8 +22,8 @@ const Card = ({ header, src, title, buttonLabel, text, cartItems, setCartItems }
       <div>
         <CardImg orientation="top" src={src} className="card-img" />
         
-          <CardHeader className="aa">{header}</CardHeader>
-        
+          <CardHeader className="off">{header}</CardHeader>
+        <button className="like-btn"><BsHeart/></button>
       </div>
       <CardBody>
         <Button className="add-button" onClick={handleAddToCartClick}>{buttonLabel}</Button>
