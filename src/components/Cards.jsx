@@ -1,9 +1,16 @@
-import React from "react";
-import { Card as ReactCard, CardImg, CardBody, CardTitle, Button, CardText, CardHeader} from "react-bootstrap";
+import React, { useState } from "react";
+import { Card as ReactCard, CardImg, CardBody, CardTitle, Button, CardText, CardHeader } from "react-bootstrap";
 import './Cards.css';
-import { BsHeart } from 'react-icons/bs';
+import { FcLike } from 'react-icons/fc';
+import {PiHeartLight} from 'react-icons/pi'
 
 const Card = ({ header, src, title, buttonLabel, text, cartItems, setCartItems }) => {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleLikeClick = () => {
+    setIsLiked(!isLiked);
+  };
+
   const handleAddToCartClick = () => {
     const cardData = {
       id,
@@ -17,13 +24,15 @@ const Card = ({ header, src, title, buttonLabel, text, cartItems, setCartItems }
     setCartItems([...cartItems, cardData]);
   };
 
+  // Apply a different class based on the liked state
+  const likeBtnClass = isLiked ? <FcLike/> : <PiHeartLight/>;
+
   return (
     <ReactCard className="card">
       <div>
         <CardImg orientation="top" src={src} className="card-img" />
-        
-          <CardHeader className="off">{header}</CardHeader>
-        <button className="like-btn"><BsHeart/></button>
+        <CardHeader className="off">{header}</CardHeader>
+          <button className='like-btn' onClick={handleLikeClick}>{likeBtnClass}</button>
       </div>
       <CardBody>
         <Button className="add-button" onClick={handleAddToCartClick}>{buttonLabel}</Button>
@@ -35,4 +44,5 @@ const Card = ({ header, src, title, buttonLabel, text, cartItems, setCartItems }
 };
 
 export default Card;
+
 

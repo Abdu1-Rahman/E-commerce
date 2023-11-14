@@ -118,13 +118,49 @@ const Sidenav = () => {
       </div>
       <h2 className="heading-2">Browse By Category</h2>
       <div className="product">
-        <div className="laptop border border-dark"><h2><BsLaptop/></h2>Laptops</div>
-        <div className="phone border border-dark"><h2><BsPhone/></h2>Phones</div>
-        <div className="camera border border-dark"><h2><BsCamera/></h2>Camera</div>
-        <div className="headphone border border-dark"><h2><BsHeadphones/></h2>Headphones</div>
-        <div className="speaker border border-dark"><h2><BsSpeaker/></h2>Speakers</div>
-        <div className="game border border-dark"><h2><BiJoystick/></h2>Gaming</div>
+        <div className="laptop"><h2><BsLaptop/></h2>Laptops</div>
+        <div className="phone"><h2><BsPhone/></h2>Phones</div>
+        <div className="camera"><h2><BsCamera/></h2>Camera</div>
+        <div className="headphone"><h2><BsHeadphones/></h2>Headphones</div>
+        <div className="speaker"><h2><BsSpeaker/></h2>Speakers</div>
+        <div className="game"><h2><BiJoystick/></h2>Gaming</div>
         </div>
+        <div className="heading-1">
+        <div className="mark">_</div>
+        <h5 className="">Featured</h5>
+      </div>
+      <h2 className="heading-2">New Arrivals</h2>
+      <div className="main-container">
+        <div className="container1">
+          <div className="flip-card">
+            <div className="flip-front"><img src="https://images.unsplash.com/photo-1605296830714-7c02e14957ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxheXN0YXRpb24lMjA1fGVufDB8fDB8fHww" alt="" /></div>
+            <div className="flip-back"><img src="https://images.unsplash.com/photo-1605296830714-7c02e14957ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxheXN0YXRpb24lMjA1fGVufDB8fDB8fHww" alt="" /></div>
+         </div>
+       </div>
+       <div className="">
+        <div className="container2">
+          <div className="flip-card">
+           <div className="flip-front"><img src="https://images.unsplash.com/photo-1624913503273-5f9c4e980dba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtZXJhc3xlbnwwfHwwfHx8MA%3D%3D" alt="" /></div>
+           <div className="flip-back"><img src="https://images.unsplash.com/photo-1624913503273-5f9c4e980dba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtZXJhc3xlbnwwfHwwfHx8MA%3D%3D" alt="" /></div>
+         </div>
+        </div>
+        <div className="d-flex">
+        <div className="container3">
+          <div className="flip-card">
+            <div className="flip-front"><img src="https://images.unsplash.com/photo-1608488458196-61cd3a720de8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGpibCUyMHNwZWFrZXJ8ZW58MHx8MHx8fDA%3D" alt="" /></div>
+            <div className="flip-back"><img src="https://images.unsplash.com/photo-1608488458196-61cd3a720de8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGpibCUyMHNwZWFrZXJ8ZW58MHx8MHx8fDA%3D" alt="" /></div>
+          </div>
+       </div>
+       <div className="container3">
+          <div className="flip-card">
+            <div className="flip-front"><img src="https://images.unsplash.com/photo-1616341316676-fb436b96f99a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnRyb2xsZXJ8ZW58MHx8MHx8fDA%3D" alt="" /></div>
+            <div className="flip-back"><img src="https://images.unsplash.com/photo-1616341316676-fb436b96f99a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnRyb2xsZXJ8ZW58MHx8MHx8fDA%3D" alt="" /></div>
+          </div>
+       </div>
+
+      </div>
+    </div>
+    </div>
     </div>
   );
 }

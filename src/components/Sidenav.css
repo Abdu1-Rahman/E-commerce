@@ -41,10 +41,6 @@
 }
 
 @media screen and (max-width:768px){
-   /* .sidebar{
-    position: relative;
-    width: fit-content;
-   } */
   .carousel img {
     width: 100%;
     height: auto;
@@ -68,6 +64,9 @@
   .product{
     flex-direction: column;
     gap: 2px;
+  }
+  .laptop,.phone,.camera,.headphone,.speaker,.game{
+    width: 250pxS;
   }
   
   
@@ -114,7 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
+  margin: 10px;
 }
 
 .laptop,.phone,.camera,.headphone,.speaker,.game{
@@ -124,13 +124,85 @@
   display: flex;
   flex-direction: column;
   transition: 0.5s;
-  width: 150px;
+  width: 350px;
   height: 90px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 10px;
+  border: 2px solid rgb(105, 103, 103)
 }
 .laptop:hover,.phone:hover,.camera:hover,.headphone:hover,.speaker:hover,.game:hover{
   background-color: #A94064;
   color: white;
   transition: 0.5s;
 }
+
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+
+.container1{
+  position: relative;
+  width:400px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+}
+.container2{
+  position: relative;
+  width:500px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+}
+.container3{
+  position: relative;
+  width:245px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 5px;
+}
+
+.flip-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.flip-card:hover{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.flip-front img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: #333;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.flip-back img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: perspective(600px) rotateY(180deg);
+  border-radius: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
