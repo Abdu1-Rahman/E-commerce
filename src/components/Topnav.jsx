@@ -4,14 +4,14 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Topnav.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 
 
 function Topnav() {
   const navigate = useNavigate();
-  const [menu,setMenu] = useState("")
+  const [menu,setMenu] = useState("home")
 
 
   return (
@@ -28,7 +28,7 @@ function Topnav() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link onClick={()=>{setMenu("home")}} href="/">Home{menu==="home"?<hr/>:<></>}</Nav.Link>
+                  <Link to="/">Home{menu==="home"?<hr/>:<></>}</Link>
                   <Nav.Link onClick={()=>{setMenu("contact")}} href="contact">Contact{menu==="contact"?<hr/>:<></>}</Nav.Link>
                   <Nav.Link onClick={()=>{setMenu("about")}} href="about">About{menu==="about"?<hr/>:<></>}</Nav.Link>
                   <Nav.Link onClick={()=>{setMenu("login")}} href="login">Sign Up{menu==="login"?<hr/>:<></>}</Nav.Link>
